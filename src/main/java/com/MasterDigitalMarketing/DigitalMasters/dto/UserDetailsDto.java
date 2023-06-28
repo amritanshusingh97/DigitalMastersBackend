@@ -1,20 +1,11 @@
-package com.MasterDigitalMarketing.DigitalMasters.model;
+package com.MasterDigitalMarketing.DigitalMasters.dto;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Entity
-public class UserDetails {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class UserDetailsDto {
+
     private Long id;
 
-    @Column(unique = true)
     private String email;
 
     private String password;
@@ -42,7 +33,5 @@ public class UserDetails {
 	}
     
 
-    // Getters and setters
-    
 }
 
